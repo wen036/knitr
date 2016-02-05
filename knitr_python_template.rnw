@@ -1,0 +1,25 @@
+\documentclass{article}
+
+\begin{document}
+<<options>>=
+#
+# modify the two python paths point to the python executive, could be virturalenv created
+#
+# opts_chunk$set(comment=NA, 
+#                message=FALSE,
+#                echo=FALSE,
+#                engine='python',
+#                engine.path='/.../python2.7/venv/bin/python2')
+
+opts_chunk$set(comment=NA, 
+               message=FALSE,
+               echo=FALSE,
+               engine='python',
+               engine.path='/.../python3/bin/python')
+@
+<<test>>=
+import sys
+print(sys.version)
+@
+
+\end{document}
